@@ -4,7 +4,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://property-listing-frontend-theta.vercel.app/",
+    // origin: "https://property-listing-frontend-theta.vercel.app/",
+    origin: "*",
     methods: ["GET"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
