@@ -95,6 +95,10 @@ const properties = [
   },
 ];
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the property listing server");
+});
+
 app.get("/api/properties", (req, res) => {
   const { page = 1, limit = 10 } = req.query;
   const startIndex = (page - 1) * limit;
